@@ -18,8 +18,8 @@ class CreatePostsTable extends Migration
             $table->foreignId('user_id')->constrained();
             $table->string('title');
             $table->text('description');
-            $table->integer('likes');
-            $table->integer('dislikes');
+            $table->integer('likes')->default(0);
+            $table->integer('dislikes')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });
