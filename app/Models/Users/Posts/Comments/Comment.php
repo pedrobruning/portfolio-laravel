@@ -2,11 +2,11 @@
 
 namespace App\Models\Users\Posts\Comments;
 
-use App\Models\Users\Posts\BasePostModel;
+use App\Models\Users\Posts\Likeable;
 use App\Models\Users\Posts\Post;
-use App\Models\Users\User;
+use App\Models\User;
 
-class Comment extends BasePostModel
+class Comment extends Likeable
 {
     protected $table = 'post_comments';
 
