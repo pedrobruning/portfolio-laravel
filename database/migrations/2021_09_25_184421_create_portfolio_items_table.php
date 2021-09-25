@@ -13,11 +13,11 @@ class CreatePortfolioItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('portfolio_items', function (Blueprint $table) {
+        Schema::create('portfolio_projects', function (Blueprint $table) {
             $table->id();
             $table->foreignId('portfolio_id')->constrained();
             $table->foreignId('user_id')->constrained();
-            $table->string('name');
+            $table->string('title');
             $table->string('link');
             $table->text('description');
             $table->timestamps();

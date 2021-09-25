@@ -2,9 +2,7 @@
 
 namespace App\Models\Resumes;
 
-use App\Models\User;
-
-class ResumeHobbie extends BaseResumeModel
+class Hobbie extends BaseResumeModel
 {
     protected $table = 'resume_hobbies';
 

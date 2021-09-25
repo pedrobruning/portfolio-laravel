@@ -2,7 +2,7 @@
 
 namespace App\Models\Resumes;
 
-class ResumeEducation extends BaseResumeModel
+class Education extends BaseResumeModel
 {
     protected $table = 'resume_educations';
 
