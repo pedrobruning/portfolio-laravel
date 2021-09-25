@@ -4,7 +4,7 @@ namespace App\Models\Resumes;
 
 use App\Models\User;
 
-class ResumeJob extends BaseResumeModel
+class Job extends BaseResumeModel
 {
     protected $table = 'resume_jobs';
 

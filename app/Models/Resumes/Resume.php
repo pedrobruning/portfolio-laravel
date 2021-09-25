@@ -24,16 +24,21 @@ class Resume extends Model
 
     public function hobbies()
     {
-        return $this->hasMany(ResumeHobbie::class);
+        return $this->hasMany(Hobbie::class);
     }
 
     public function jobs()
     {
-        return $this->hasMany(ResumeJob::class);
+        return $this->hasMany(Job::class);
     }
 
     public function educations()
     {
-        return $this->hasMany(ResumeEducation::class);
+        return $this->hasMany(Education::class);
+    }
+
+    public function languages()
+    {
+        return $this->hasMany(Language::class);
     }
 }

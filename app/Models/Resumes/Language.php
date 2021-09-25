@@ -2,11 +2,10 @@
 
 namespace App\Models\Resumes;
 
-use App\Models\Languages\Language;
+use App\Models\Languages\Language as BaseLanguage;
 use App\Models\Languages\LanguageLevel;
-use App\Models\User;
 
-class ResumeLanguage extends BaseResumeModel
+class Language extends BaseResumeModel
 {
     protected $table = 'resume_languages';
 
@@ -21,6 +20,6 @@ class ResumeLanguage extends BaseResumeModel
 
     public function language()
     {
-        return $this->belongsTo(Language::class);
+        return $this->belongsTo(BaseLanguage::class);
     }
 }
