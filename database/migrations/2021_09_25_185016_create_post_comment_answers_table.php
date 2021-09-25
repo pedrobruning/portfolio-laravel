@@ -16,7 +16,6 @@ class CreatePostCommentAnswersTable extends Migration
         Schema::create('post_comment_answers', function (Blueprint $table) {
             $table->id();
             $table->foreignId('post_comment_id')->constrained();
-            $table->foreignId('commenter_id')->constrained('users');
             $table->foreignId('answerer_id')->constrained('users');
             $table->text('description');
             $table->integer('likes')->default(0);
