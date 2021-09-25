@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Models\Resumes\Resume;
+use App\Models\Resumes\ResumeHobbie;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -41,4 +43,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function resumes()
+    {
+        return $this->hasMany(Resume::class);
+    }
 }
