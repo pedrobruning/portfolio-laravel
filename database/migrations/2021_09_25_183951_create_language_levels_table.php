@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateResumeLanguageLevelsTable extends Migration
+class CreateLanguageLevelsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateResumeLanguageLevelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('resume_language_levels', function (Blueprint $table) {
+        Schema::create('language_levels', function (Blueprint $table) {
             $table->id();
             $table->string('name');
         });
@@ -26,6 +26,6 @@ class CreateResumeLanguageLevelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('resume_language_levels');
+        Schema::dropIfExists('language_levels');
     }
 }

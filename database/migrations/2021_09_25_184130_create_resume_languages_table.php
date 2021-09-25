@@ -17,7 +17,7 @@ class CreateResumeLanguagesTable extends Migration
             $table->id();
             $table->foreignId('resume_id')->constrained();
             $table->foreignId('user_id')->constrained();
-            $table->foreignId('resume_language_level_id')->constrained();
+            $table->foreignId('language_level_id')->constrained();
             $table->foreignId('language_id')->constrained();
             $table->timestamps();
         });
