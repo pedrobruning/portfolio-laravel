@@ -3,7 +3,7 @@
 
 namespace App\Models\Users\Posts;
 
-use App\Models\Users\User;
+use App\Models\User;
 
 abstract class BasePostModel extends Likeable
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Users;
+namespace App\Models;
 
 use App\Models\Users\Resumes\Resume;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
