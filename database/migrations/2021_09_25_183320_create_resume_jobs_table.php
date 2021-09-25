@@ -17,6 +17,7 @@ class CreateResumeJobsTable extends Migration
             $table->id();
             $table->foreignId('resume_id')->constrained();
             $table->foreignId('user_id')->constrained();
+            $table->string('title');
             $table->string('company');
             $table->text('description')->nullable();
             $table->date('start_date');
