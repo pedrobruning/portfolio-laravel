@@ -1,21 +1,21 @@
 <?php
 
 
-namespace App\Models\Portfolios;
+namespace App\Models\Users\Resumes;
 
 
-use App\Models\User;
+use App\Models\Users\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-abstract class BasePortfolioModel extends Model
+abstract class BaseResumeModel extends Model
 {
     use HasFactory, SoftDeletes;
 
-    public function portfolio()
+    public function resume()
     {
-        return $this->belongsTo(Portfolio::class);
+        return $this->belongsTo(Resume::class);
     }
 
     public function user()

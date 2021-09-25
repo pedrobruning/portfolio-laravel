@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Resumes;
+namespace App\Models\Users\Resumes;
 
 class Education extends BaseResumeModel
 {

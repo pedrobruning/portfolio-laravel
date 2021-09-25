@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Users;
 
-use App\Models\Resumes\Resume;
-use App\Models\Resumes\ResumeHobbie;
+use App\Models\Users\Resumes\Resume;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;

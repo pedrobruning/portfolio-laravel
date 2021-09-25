@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Resumes;
+namespace App\Models\Users\Resumes;
 
 use App\Models\Languages\Language as BaseLanguage;
 use App\Models\Languages\LanguageLevel;

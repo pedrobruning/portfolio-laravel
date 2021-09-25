@@ -1,8 +1,6 @@
 <?php
 
-namespace App\Models\Resumes;
-
-use App\Models\User;
+namespace App\Models\Users\Resumes;
 
 class Job extends BaseResumeModel
 {

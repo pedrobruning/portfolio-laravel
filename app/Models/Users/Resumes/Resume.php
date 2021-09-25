@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Models\Resumes;
+namespace App\Models\Users\Resumes;
 
-use App\Models\User;
+use App\Models\Users\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

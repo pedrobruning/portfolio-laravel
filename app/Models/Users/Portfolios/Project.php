@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Portfolios;
+namespace App\Models\Users\Portfolios;
 
 class Project extends BasePortfolioModel
 {
