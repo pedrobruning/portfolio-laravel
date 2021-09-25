@@ -17,6 +17,11 @@ class CreateResumeJobsTable extends Migration
             $table->id();
             $table->foreignId('resume_id')->constrained();
             $table->foreignId('user_id')->constrained();
+            $table->string('company');
+            $table->text('description')->nullable();
+            $table->date('start_date');
+            $table->date('end_date')->nullable();
+            $table->boolean('current_job')->default(false);
             $table->timestamps();
             $table->softDeletes();
         });
