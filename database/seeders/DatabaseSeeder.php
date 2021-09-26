@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Database\Seeders\Users\BaseUserSeeder;
+use Database\Seeders\Users\Portfolios\PortfolioSeeder;
 use Database\Seeders\Users\Posts\PostSeeder;
 use Database\Seeders\Users\Resumes\ResumeSeeder;
 use Illuminate\Database\Seeder;
@@ -22,7 +23,8 @@ class DatabaseSeeder extends Seeder
             LanguageSeeder::class,
             BaseUserSeeder::class,
             ResumeSeeder::class,
-            PostSeeder::class
+            PostSeeder::class,
+            PortfolioSeeder::class
         ]);
     }
 }
