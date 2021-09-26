@@ -2,7 +2,7 @@
 
 namespace App\Models\Users\Resumes;
 
-use App\Models\Users\User;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

@@ -3,7 +3,7 @@
 namespace App\Models\Users\Posts;
 
 use App\Models\Users\Posts\Comments\Comment;
-use App\Models\Users\User;
+use App\Models\User;
 
 class Post extends Likeable
 {
