@@ -33,7 +33,7 @@ class ResumeSeeder extends Seeder
     {
         $user = User::find(self::BASE_USER);
 
-        $return = [
+        return [
             'user_id' => $user->id
         ];
     }

@@ -15,7 +15,7 @@ class Answer extends Likeable
 
     public function comment()
     {
-        return $this->belongsTo(Comment::class);
+        return $this->belongsTo(Comment::class, 'post_comment_id', 'id');
     }
 
     public function answerer()

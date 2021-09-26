@@ -11,7 +11,7 @@ class Comment extends Likeable
     protected $table = 'post_comments';
 
     protected $fillable = [
-        'description', 'likes', 'dislikes', 'user_id', 'commenter_id'
+        'description', 'likes', 'dislikes', 'commenter_id'
     ];
 
     public function commenter()
@@ -26,7 +26,7 @@ class Comment extends Likeable
 
     public function answers()
     {
-        return $this->hasMany(Answer::class);
+        return $this->hasMany(Answer::class, 'post_comment_id', 'id');
     }
 
 }
