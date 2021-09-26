@@ -20,17 +20,21 @@ class ResumeSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::find(self::BASE_USER);
-
-        $userId = [
-            'user_id' => $user->id
-        ];
-
+        $userId = $this->getBaseUserId();
         Resume::factory($userId)
             ->has(Hobbie::factory($userId)->count(4))
             ->has(Job::factory($userId)->count(3))
             ->hasEducations(4, $userId)
             ->has(ResumeLanguage::factory($userId)->count(3))
             ->create();
+    }
+
+    private function getBaseUserId(): array
+    {
+        $user = User::find(self::BASE_USER);
+
+        $return = [
+            'user_id' => $user->id
+        ];
     }
 }
