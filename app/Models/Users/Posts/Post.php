@@ -10,7 +10,7 @@ class Post extends Likeable
     protected $table = 'posts';
 
     protected $fillable = [
-        'title', 'description', 'likes', 'dislikes'
+        'title', 'description', 'likes', 'dislikes', 'user_id'
     ];
 
     public function comments()

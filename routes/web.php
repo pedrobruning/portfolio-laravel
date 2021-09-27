@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Users\Posts\CreatePostController;
+use App\Http\Controllers\Users\Posts\ShowPostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +22,13 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::group(['middleware' => 'auth'], function(){
+    Route::group(['prefix' => 'posts', 'as' => 'posts.'], function() {
+        Route::post('create', [CreatePostController::class, 'create'])->name('create');
+        Route::get('/', [ShowPostController::class, 'list'])->name('index');
+    });
+
+});
 
 require __DIR__.'/auth.php';
